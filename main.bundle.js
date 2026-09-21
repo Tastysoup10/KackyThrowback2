@@ -282,7 +282,7 @@ async function preloadImages() {
 
 async function getModLeaderboard() {
   const urls = trackData.map(track =>
-    `https://polyproxy.polymodloader.com/v6/leaderboard?version=0.6.2&trackId=${track.id}&skip=0&amount=400&onlyVerified=false`
+    `https://polytrack-leaderboard.minceraft-player-2010.workers.dev/v6/leaderboard?version=0.6.2&trackId=${track.id}&skip=0&amount=400&onlyVerified=false`
   );
 
   const allData = await Promise.all(
@@ -71895,7 +71895,7 @@ function forceLoadTrackByCode(track, quickLoad = false) {
         }
         getLeaderboard(e, t, n, i, r) {
           let a =
-            "https://polyproxy.polymodloader.com/" +
+            "https://polytrack-leaderboard.minceraft-player-2010.workers.dev/" +
             (0, R.gn)(this, rf, "f") +
             "leaderboard?version=0.6.2&trackId=" +
             t +
@@ -72106,7 +72106,7 @@ function forceLoadTrackByCode(track, quickLoad = false) {
         }
         getLeaderboardUserEntry(e, t, n) {
           const i =
-            "https://polyproxy.polymodloader.com/" +
+            "https://polytrack-leaderboard.minceraft-player-2010.workers.dev/" +
             (0, R.gn)(this, rf, "f") +
             "leaderboardUserEntry?version=0.6.2&trackId=" +
             t +
@@ -72160,7 +72160,7 @@ function forceLoadTrackByCode(track, quickLoad = false) {
         }
         getRecordings(e) {
           const t =
-            "https://polyproxy.polymodloader.com/" +
+            "https://polytrack-leaderboard.minceraft-player-2010.workers.dev/" +
             (0, R.gn)(this, rf, "f") +
             "recordings?version=0.6.2&ids=" +
             e.join(",");
@@ -72274,7 +72274,7 @@ function forceLoadTrackByCode(track, quickLoad = false) {
                 c(new Error("Recording is too large"));
               else {
                 const o =
-                  "https://polyproxy.polymodloader.com/" +
+                  "https://polytrack-leaderboard.minceraft-player-2010.workers.dev/" +
                   (0, R.gn)(this, rf, "f") +
                   "leaderboard";
                 let d =
@@ -72400,7 +72400,7 @@ function forceLoadTrackByCode(track, quickLoad = false) {
         submitUserProfile(e, t, n, i) {
           return new Promise((r, a) => {
             const s =
-                "https://polyproxy.polymodloader.com/" + (0, R.gn)(this, rf, "f") + "user",
+                "https://polytrack-leaderboard.minceraft-player-2010.workers.dev/" + (0, R.gn)(this, rf, "f") + "user",
               o =
                 "version=0.6.2&userToken=" +
                 encodeURIComponent(e) +
@@ -72432,7 +72432,7 @@ function forceLoadTrackByCode(track, quickLoad = false) {
               s(new Error("Submit not allowed"));
             else {
               const o =
-                  "https://polyproxy.polymodloader.com/" +
+                  "https://polytrack-leaderboard.minceraft-player-2010.workers.dev/" +
                   (0, R.gn)(this, rf, "f") +
                   "verifyRecordings",
                 l =
@@ -72565,7 +72565,7 @@ function forceLoadTrackByCode(track, quickLoad = false) {
         getUser(e) {
           return new Promise((t, n) => {
             const i =
-                "https://polyproxy.polymodloader.com/" +
+                "https://polytrack-leaderboard.minceraft-player-2010.workers.dev/" +
                 (0, R.gn)(this, rf, "f") +
                 "user?version=0.6.2&userToken=" +
                 encodeURIComponent(e),
